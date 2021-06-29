@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import ToggleColorMode from '../components/ToggleColorMode';
 
 export default function Home() {
   return (
@@ -13,6 +14,10 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
+
+      <div>
+        <ToggleColorMode />
+      </div>
     </React.Fragment>
   );
 }
